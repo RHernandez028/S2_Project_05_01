@@ -14,10 +14,13 @@
 */
 
 /* Window and Body Styles */
+
+/* Here the height changes the size of the image. Here a percentage is used so when the webiste is loaded on a different sized screen it will be a percentage of that screen*/
 html {
     height: 100%
 }
 
+/* Here */
 body {
     width: 95%;
     min-width: 640px;
@@ -52,10 +55,10 @@ header > nav  {
     width: 30%;
 }
 
-header > nav > ul > li {
+header > nav > ul > li > a {
     display: block;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 /* Horizontal Navigation List Styles */

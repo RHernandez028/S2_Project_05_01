@@ -13,6 +13,12 @@
 
 */
 
+
+
+/* I didn't explained the properties that repeated. */
+
+
+
 /* Window and Body Styles */
 
 /* Here the height changes the size of the image. Here a percentage is used so when the webiste is loaded on a different sized screen it will be a percentage of that screen*/
@@ -20,7 +26,7 @@ html {
     height: 100%
 }
 
-/* Here */
+/* Here  the width of the body takes up 95% of the screen and will adjust to 960px to 640px. The margin auto basically centers the elelemt*/
 body {
     width: 95%;
     min-width: 640px;
@@ -30,10 +36,12 @@ body {
     min-height: 100%;
 }
 
+/* Here the following selector tells the element to be treated using the box-model */
 header, ul, nav, li, a{
     box-sizing: border-box;
 } 
 /* Row Styles */
+/* Every element witht the id .row will have the all of the bottom elements pushed up and where they are suppposed to be. */
 .row::after{
     clear: both;
     content: "";
@@ -42,12 +50,15 @@ header, ul, nav, li, a{
 
 
 /* Page Header Styles */
+/* The display block elements tells the selector to be put into unform boxes that will be minipulated. */
 body > header > img{
     display: block;
     width: 70%;
     float: left;
 }
 
+/* Float tell the element to "Fly" or move as far left it can in the element*/
+/* Padding gives a little space between the elements next to it. */
 header > nav  {
     float: left;
     padding-left: 2%;
@@ -132,6 +143,7 @@ ul#comments > li > p {
 }
 
 /* Footer Styles */
+/* the clear property tells weather the element should be up next to another another element. In this case it its is basically floated to clear all, so it is at the bottom. */
 footer {
     clear: both;
 }
